@@ -7,7 +7,7 @@
   <body>
     <h1>Welcome to Container</h1>
 
-    <a href="<c:url value="/spittles" />"></a> | 
-    <a href="<c:url value="/spitter/register" />">Register</a>
+   <%--  <a href="<c:url value="/spittles" />"></a> | 
+    <a href="<c:url value="/spitter/register" />">Register</a> --%>
   </body>
 </html>
