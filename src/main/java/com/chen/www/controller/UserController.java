@@ -17,21 +17,21 @@ public class UserController {
 	@Autowired
 	UserRepository userRepository;
 
-	@RequestMapping("login.do")
-	public String login(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) {
-		String username = httpServletRequest.getParameter("username");
-		String password = httpServletRequest.getParameter("password");
-		User user = userRepository.findByUsername(username);
-		if(user ==null){
-			return "/error";
-		}
-		if(user.getPassword() == password){
-			//return "/"+username;
-			return "/hello";
-		}
-		
-		return "";
-	}
+//	@RequestMapping("login.do")
+//	public String login(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) {
+//		String username = httpServletRequest.getParameter("username");
+//		String password = httpServletRequest.getParameter("password");
+//		User user = userRepository.findByUsername(username);
+//		if(user ==null){
+//			return "/error";
+//		}
+//		if(user.getPassword() == password){
+//			//return "/"+username;
+//			return "/hello";
+//		}
+//		
+//		return "";
+//	}
 	
 	@RequestMapping("/login")
 	public String loginView(){
