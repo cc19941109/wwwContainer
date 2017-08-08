@@ -10,29 +10,29 @@ import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
-@Configuration
-@EnableWebMvc
-@ComponentScan("com.chen.www.controller")
+//@Configuration
+//@EnableWebMvc
+//@ComponentScan("com.chen.www.controller")
 public class WebConfig extends WebMvcConfigurerAdapter {
 
-  @Bean
-  public ViewResolver viewResolver() { 
-    InternalResourceViewResolver resolver = new InternalResourceViewResolver();
-    resolver.setPrefix("/WEB-INF/views/");
-    resolver.setSuffix(".jsp");
-    resolver.setViewClass(org.springframework.web.servlet.view.JstlView.class);
-    return resolver;
-  }
-  
-  @Override
-  public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
-    configurer.enable();
-  }
-  
-  @Override
-  public void addResourceHandlers(ResourceHandlerRegistry registry) {
-    // TODO Auto-generated method stub
-    super.addResourceHandlers(registry);
-  }
+//  @Bean
+//  public ViewResolver viewResolver() { 
+//    InternalResourceViewResolver resolver = new InternalResourceViewResolver();
+//    resolver.setPrefix("/WEB-INF/views/");
+//    resolver.setSuffix(".jsp");
+//    resolver.setViewClass(org.springframework.web.servlet.view.JstlView.class);
+//    return resolver;
+//  }
+//  
+//  @Override
+//  public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
+//    configurer.enable();
+//  }
+//  
+//  @Override
+//  public void addResourceHandlers(ResourceHandlerRegistry registry) {
+//    // TODO Auto-generated method stub
+//    super.addResourceHandlers(registry);
+//  }
 
 }
